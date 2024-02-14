@@ -1,6 +1,8 @@
 import {
   IcHomeOff,
   IcHomeOn,
+  IcListDataOff,
+  IcListDataOn,
   IcProfileOff,
   IcProfileOn
 } from '../../../assets';
@@ -12,6 +14,8 @@ const Icon = ({label, focus}) => {
   switch (label) {
     case 'Home':
       return focus ? <IcHomeOn /> : <IcHomeOff />;
+    case 'ListData':
+      return focus ? <IcListDataOn /> : <IcListDataOff />;
     case 'Profile':
       return focus ? <IcProfileOn /> : <IcProfileOff />;
     default:

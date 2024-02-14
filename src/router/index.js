@@ -1,5 +1,6 @@
 import {
   Home,
+  ListData,
   Profile,
   SignIn,
   SignUp,
@@ -18,7 +19,7 @@ const MainApp = () => {
   return (
     <Tab.Navigator tabBar={(props) => <BottomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home}  options={{headerShown: false}}/>
-      {/* <Tab.Screen name="Order" component={Order} /> */}
+      <Tab.Screen name="ListData" component={ListData}  options={{headerShown: false}}/>
       <Tab.Screen name="Profile" component={Profile}  options={{headerShown: false}}/>
     </Tab.Navigator>
   );

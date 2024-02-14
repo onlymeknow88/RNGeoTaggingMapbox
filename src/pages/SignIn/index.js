@@ -9,14 +9,15 @@ import { useForm } from '../../utils';
 
 const SignIn = ({navigation}) => {
   const [form, setForm] = useForm({
-    email: '',
-    password: '',
+    email: 'a@a.com',
+    password: '123123123',
   });
   const dispatch = useDispatch();
 
   const onSubmit = () => {
     // console.log(form)
-    dispatch(signInAction(form, navigation));
+    navigation.reset({index: 0, routes: [{name: 'MainApp'}]});
+    // dispatch(signInAction(form, navigation));
   };
 
   return (
@@ -43,12 +44,12 @@ const SignIn = ({navigation}) => {
         />
           <Gap height={24} />
           <Button text="Sign In" textColor="#fff" onPress={onSubmit} />
-          <Gap height={12} />
+          {/* <Gap height={12} />
           <Button
             text="Create New Account"
             color="#d4d4d8"
             onPress={() => navigation.navigate('SignUp')}
-          />
+          /> */}
         </View>
       </View>
     </ScrollView>

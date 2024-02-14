@@ -1,4 +1,5 @@
 import Home from "./Home";
+import ListData from "./ListData";
 import Profile from "./Profile"
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
@@ -10,4 +11,5 @@ export {
     SignUp,
     Home,
     Profile,
+    ListData
 }
